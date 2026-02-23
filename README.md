@@ -1,5 +1,4 @@
-# Stock-forecast
-# 📈 North Star Stock Analytics (Frontend Version)
+# 📈 North Star Stock Analytics
 
 A modern stock analytics dashboard built using HTML, CSS, and JavaScript.
 
