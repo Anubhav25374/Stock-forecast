@@ -17,7 +17,10 @@ This project allows users to search stock symbols and view real-time market data
 
 ## 📸 Preview
 
-![Dashboard Preview](brave_screenshot.png)
+<p align="center">
+  <img src="brave_screenshot.png" width="45%">
+  <img src="brave_screenshot (1).png" width="45%">
+</p>
 
 
 ---
@@ -74,4 +77,3 @@ To run this project:
 const API_KEY = "YOUR_API_KEY_HERE";
 ```
 
-## 📂 Project Structure
