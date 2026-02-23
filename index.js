@@ -1,4 +1,4 @@
-const API_KEY = "9HQCCMDW4318V1R1";
+const API_KEY = "ENTER_YOUR_KEY";
 
 let stockChart;
 
@@ -97,4 +97,8 @@ async function searchStock() {
         alert("Error fetching data.");
         console.error(error);
     }
+
 }
+
+
+//9HQCCMDW4318V1R1
