@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>North Star Stock Analytics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>Markets</h2>
+        <ul id="stockList">
+            <li onclick="loadStock('AAPL')">AAPL</li>
+            <li onclick="loadStock('MSFT')">MSFT</li>
+            <li onclick="loadStock('GOOGL')">GOOGL</li>
+            <li onclick="loadStock('AMZN')">AMZN</li>
+            <li onclick="loadStock('META')">META</li>
+            <li onclick="loadStock('NVDA')">NVDA</li>
+            <li onclick="loadStock('TSLA')">TSLA</li>
+            <li onclick="loadStock('JPM')">JPM</li>
+            <li onclick="loadStock('SPY')">SPY</li>
+            <li onclick="loadStock('QQQ')">QQQ</li>
+        </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <header>
+            <h1>THE NORTH STAR STOCK ANALYTICS</h1>
+
+            <div class="search-box">
+                <input type="text" id="stockInput" placeholder="Enter stock symbol">
+                <button onclick="searchStock()">Search</button>
+            </div>
+        </header>
+
+        <div class="dashboard">
+
+            <div class="card large">
+                <h2 id="stockTitle">Stock Chart</h2>
+                <canvas id="stockChart"></canvas>
+            </div>
+
+            <div class="card">
+                <h3>Price Overview</h3>
+                <p>Current: <span id="price">--</span></p>
+                <p>Open: <span id="open">--</span></p>
+                <p>High: <span id="high">--</span></p>
+                <p>Low: <span id="low">--</span></p>
+                <p>Prev Close: <span id="prevClose">--</span></p>
+            </div>
+
+            <div class="card">
+                <h3>Performance</h3>
+                <p>Change: <span id="changeDollar">--</span></p>
+                <p>Change %: <span id="changePercent">--</span></p>
+                <p>5 Day Return: <span id="return5">--</span></p>
+                <p>30 Day Return: <span id="return30">--</span></p>
+            </div>
+
+            <div class="card">
+                <h3>Volume Analytics</h3>
+                <p>Volume: <span id="volume">--</span></p>
+                <p>Avg 30D Volume: <span id="avgVolume">--</span></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
