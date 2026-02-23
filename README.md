@@ -76,3 +76,7 @@ To run this project:
 const API_KEY = "YOUR_API_KEY_HERE";
 ```
 
+## Live
+click here! :
+https://luxury-figolla-dc124c.netlify.app/
+
